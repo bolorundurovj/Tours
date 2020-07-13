@@ -118,6 +118,20 @@ body {
     }
 }
 
+@keyframes moveInBottom {
+    0%{
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    80% {
+        transform: translateY(-10px);
+    }
+    100%{
+        opacity: 1;
+        transform: translate(0);
+    }
+}
+
 @keyframes spinRight {
     0%{
         opacity: 0;
@@ -143,6 +157,7 @@ body {
     display: inline-block;
     border-radius: 70px;
     transition: all .2s;
+    position: relative;
 }
 
 .btn:hover {
@@ -158,4 +173,32 @@ body {
 .btn-white {
     background-color: #fff;
     color: #777;
+}
+
+.btn::after {
+    content: "";
+    display: inline-block;
+    height: 100%;
+    width: 100%;
+    border-radius: 70px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    transition: all .4s;
+}
+
+.btn-white::after {
+    background-color: #fff;
+}
+
+.btn:hover::after {
+    transform: scaleX(1.4) scaleY(1.6);
+    opacity: 0;
+}
+
+.btn-animated {
+    animation: moveInBottom .5s ease-out .75s;
+    /* To make button invisible while delayed */
+    animation-fill-mode: backwards;
 }
