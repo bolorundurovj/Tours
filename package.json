@@ -1,0 +1,25 @@
+{
+  "name": "tours",
+  "version": "1.0.0",
+  "description": "A simple Nature Tourism Site",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/bolorundurovj/Tours.git"
+  },
+  "keywords": [
+    "Nature",
+    "Tours",
+    "Tourism",
+    "Natours"
+  ],
+  "author": "Bolorunduro Valiant-Joshua",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/bolorundurovj/Tours/issues"
+  },
+  "homepage": "https://github.com/bolorundurovj/Tours#readme"
+}
