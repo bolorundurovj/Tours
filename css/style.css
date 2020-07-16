@@ -56,6 +56,7 @@ html {
 body {
   font-family: "Lato", sans-serif;
   font-weight: 400;
+  font-size: 16px;
   line-height: 1.7;
   color: #777;
   padding: 30px; }
@@ -117,7 +118,7 @@ body {
   margin-bottom: 4rem; }
 
 .u-margin-bottom-small {
-  margin-bottom: 2rem; }
+  margin-bottom: 1.5rem; }
 
 .btn:link, .btn:visited {
   text-transform: uppercase;
