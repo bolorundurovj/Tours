@@ -655,6 +655,15 @@ body {
   padding-left: 9rem;
   font-size: 1.6rem;
   transform: skewX(-12deg); }
+  @media (max-width: 56.25em) {
+    .story {
+      width: 100%;
+      padding: 4rem;
+      padding-left: 7rem; } }
+  @media (max-width: 37.5em) {
+    .story {
+      padding-left: 6rem;
+      transform: skewX(0); } }
   .story__shape {
     width: 15rem;
     height: 15rem;
@@ -665,13 +674,20 @@ body {
     clip-path: circle(50% at 50% 50%);
     transform: skewX(12deg) translateX(-3rem);
     position: relative; }
+    @media (max-width: 37.5em) {
+      .story__shape {
+        padding-left: 6rem;
+        transform: skewX(0) translateX(-3rem); } }
   .story__img {
     height: 100%;
     transform: translateX(-4rem) scale(1.4);
-    transition: all .5s ease-in;
+    transition: all 0.5s ease-in;
     backface-visibility: hidden; }
   .story__text {
     transform: skewX(12deg); }
+    @media (max-width: 37.5em) {
+      .story__text {
+        transform: skewX(0); } }
   .story__caption {
     position: absolute;
     top: 50%;
@@ -682,7 +698,7 @@ body {
     font-size: 1.7rem;
     text-align: center;
     opacity: 0;
-    transition: all .5s ease-in;
+    transition: all 0.5s ease-in;
     backface-visibility: hidden; }
   .story:hover .story__caption {
     transform: translate(-50%, -50%);
