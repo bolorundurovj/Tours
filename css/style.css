@@ -381,7 +381,8 @@ body {
     .card {
       height: auto;
       border-radius: 3px;
-      background-color: #fff; }
+      background-color: #fff;
+      box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.15); }
       .card__side {
         height: auto;
         position: relative;
@@ -397,13 +398,15 @@ body {
             background-image: linear-gradient(to right bottom, #2998ff, #5643fa); }
       .card:hover .card__side--front {
         transform: rotateY(0); }
+      .card__details {
+        padding: 1rem 3rem; }
       .card__cta {
         position: relative;
         top: 0%;
         left: 0;
         transform: translate(0);
         width: 100%;
-        padding: 4rem; }
+        padding: 7rem 4rem 4rem 4rem; }
       .card__price-box {
         margin-bottom: 3rem; }
       .card__price-value {
