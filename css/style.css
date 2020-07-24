@@ -4,6 +4,13 @@
     900 - 1200px: Tablet Landscape
     1200 - 1800px: Normal Styling
     1800px + : Large Monitor
+ 
+
+ $breakpoint argument choices:
+ - phone
+ - tab-port
+ - tab-land
+ - big-desktop
  */
 @keyframes moveInLeft {
   0% {
@@ -56,18 +63,18 @@
 
 html {
   font-size: 62.5%; }
-  @media (max-width: 600px) {
+  @media (min-width: 112.5em) {
+    html {
+      font-size: 75%; } }
+  @media (max-width: 75em) {
+    html {
+      font-size: 56.25%; } }
+  @media (max-width: 56.25em) {
     html {
       font-size: 50%; } }
-  @media (max-width: 900px) {
+  @media (max-width: 37.5em) {
     html {
-      font-size: 60%; } }
-  @media (max-width: 1200px) {
-    html {
-      font-size: 70%; } }
-  @media (min-width: 1800px) {
-    html {
-      font-size: 80%; } }
+      font-size: 37.5%; } }
 
 body {
   box-sizing: border-box; }
@@ -87,9 +94,9 @@ body {
   margin-bottom: 60px; }
   .heading-primary--main {
     display: block;
-    font-size: 60px;
+    font-size: 6rem;
     font-weight: 400;
-    letter-spacing: 35px;
+    letter-spacing: 3.5rem;
     animation-name: moveInLeft;
     animation-duration: 1s;
     animation-timing-function: ease-out;
@@ -97,9 +104,9 @@ body {
         animation-iteration-count: 3; */ }
   .heading-primary--sub {
     display: block;
-    font-size: 20px;
+    font-size: 2rem;
     font-weight: 700;
-    letter-spacing: 17.4px;
+    letter-spacing: 1.74rem;
     animation: moveInRight 1s ease-out; }
 
 .heading-secondary {
