@@ -25,6 +25,6 @@
   "homepage": "https://github.com/bolorundurovj/Tours#readme",
   "dependencies": {},
   "devDependencies": {
-    "node-sass": "^7.0.0"
+    "node-sass": "^9.0.0"
   }
 }
